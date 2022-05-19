@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/*------------nav_bar_style-----------*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+       display: none; 
+       width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------page_style-----------*/
+
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+/*----------CHENAR CONTACTE-------*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.contact{
+    background-color: lightcyan;
+    padding: 4% 0;
+}
+
+.contact-form1{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.contact-form2{
+    width: 43%;
+    margin: 1%;
+    padding: 5%;
+    float: left;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+
+input[type=text], select, textarea{
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(115, 196, 202)
+}
+
+@media only screen and (max-width:768px){
+    .contact{
+        padding: 20% 0;
+    }
+
+    .contact-form1 {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact-form2 {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+

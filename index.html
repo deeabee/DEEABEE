@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Home</title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+<script src="https://kit.fontawesome.com/10f6dbc809.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="pages/desprenoi.html" onclick="toggleMenu();">Despre noi</a></li>
+            <li><a href="pages/servicii1.html" onclick="toggleMenu();">Servicii</a></li>
+            <li><a href="pages/contacte.html" onclick="toggleMenu();">Contacte</a></li>
+        </ul>
+
+    </div>
+    <section class="banner">
+        <header>
+             <h2 class="logo">DeeaBee</h2>
+             <i class="fa-thin fa-bee"></i>
+             <div class="toggle" onclick="toggleMenu();">
+             </div>
+        </header>
+        <video src="resources/video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be beautiful</h2>
+            
+            <p>Frumusețea este în fiecare dintre noi! Te invintăm să vii și să o descoperi și mai profund la noi în salon.</p>
+            <a href="pages/contacte.html">Contactează-ne</a>
+        </div>
+        <ul class="sci"> 
+            <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/instagram.png"></a></li>
+            <li><a href="https://twitter.com/twitter"><img src="images/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active');
+            
+        }
+    </script>
+
+</body>
+</html>
